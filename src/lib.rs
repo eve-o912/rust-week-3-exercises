@@ -71,7 +71,6 @@ impl CompactSize {
                 let v = u64::from_le_bytes(arr);
                 Ok((CompactSize::new(v), 9))
             }
-            _ => Err(BitcoinError::InvalidFormat),
         }
     }
 }
